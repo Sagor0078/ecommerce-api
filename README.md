@@ -1,7 +1,5 @@
 # ecommerce-api
 
-# ecommerce-api
-
 This is an e-commerce API built with FastAPI and PostgreSQL, using Docker for containerization.
 
 ## Prerequisites
