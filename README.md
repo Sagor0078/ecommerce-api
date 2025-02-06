@@ -5,6 +5,14 @@ This is an e-commerce API built with FastAPI and PostgreSQL, using Docker for co
 ## Prerequisites
 
 - Docker
+- FastAPI
+- SQLAlchemy(ORM)
+- PostgrSQL
+- docker-compose
+- Ruff - (formatting and linting)
+- JWT
+- OAuth2
+- uvicorn, starlatte 
 <!-- - Docker Compose -->
 
 ## Environment variable
