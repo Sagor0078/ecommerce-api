@@ -7,15 +7,6 @@ This is an e-commerce API built with FastAPI and PostgreSQL, using Docker for co
 - Docker
 <!-- - Docker Compose -->
 
-## Getting Started
-
-### Clone the Repository
-
-```sh
-git clone https://github.com/Sagor0078/ecommerce-api.git
-cd ecommerce-api
-```
-
 ## Environment variable
 ```sh
 db_username =  
@@ -30,7 +21,42 @@ algorithm = "HS256"
 access_token_expire_minutes = 30
 
 DATABASE_URL="postgresql://postgres:your_password@localhost:5432/template1"
+
 ```
+
+### Clone the Repository
+
+```sh
+git clone https://github.com/Sagor0078/ecommerce-api.git
+cd ecommerce-api
+```
+
+### Set Up a Virtual Environment:
+
+```sh
+python3 -m venv env
+source env/bin/activate
+```
+### Install Dependencies:
+
+```sh
+pip install -r requirements.txt
+```
+
+### migrate database
+
+```sh
+python migrate.py
+```
+
+### Run the Application:
+
+```sh
+python run.py
+```
+
+
+
 
 ## Entities and Relationships
 
