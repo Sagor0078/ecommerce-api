@@ -1,4 +1,4 @@
-from pydantic import BaseModel, validator
+from pydantic import BaseModel, field_validator
 from datetime import datetime
 from typing import List, Optional, ClassVar
 from app.schemas.categories import CategoryBase
@@ -15,7 +15,7 @@ class ProductBase(BaseModel):
     description: Optional[str]
     price: int
 
-    @validator("discount_percentage", pre=True)
+    @field_validator("discount_percentage")
     def validate_discount_percentage(cls, v):
         if v < 0 or v > 100:
             raise ValueError("discount_percentage must be between 0 and 100")
