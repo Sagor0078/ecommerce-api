@@ -1,11 +1,11 @@
 from fastapi import APIRouter, Depends
-from app.db.database import get_db
-from app.services.accounts import AccountService
+from src.db.database import get_db
+from src.services.accounts import AccountService
 from sqlalchemy.orm import Session
 from fastapi.security import HTTPBearer
-from app.schemas.accounts import AccountOut, AccountUpdate
+from src.schemas.accounts import AccountOut, AccountUpdate
 from fastapi.security import HTTPBearer
-from app.core.security import auth_scheme
+from src.core.security import auth_scheme
 from fastapi.security.http import HTTPAuthorizationCredentials
 
 

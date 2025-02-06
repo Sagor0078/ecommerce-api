@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session
-from app.models.models import User
-from app.utils.responses import ResponseHandler
-from app.core.security import get_password_hash, get_token_payload
+from src.models.models import User
+from src.utils.responses import ResponseHandler
+from src.core.security import get_password_hash, get_token_payload
 
 
 class AccountService:

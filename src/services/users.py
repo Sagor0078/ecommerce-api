@@ -1,8 +1,8 @@
 from sqlalchemy.orm import Session
-from app.models.models import User
-from app.schemas.users import UserCreate, UserUpdate
-from app.utils.responses import ResponseHandler
-from app.core.security import get_password_hash
+from src.models.models import User
+from src.schemas.users import UserCreate, UserUpdate
+from src.utils.responses import ResponseHandler
+from src.core.security import get_password_hash
 
 
 class UserService:

@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session
-from app.models.models import Product, Category
-from app.schemas.products import ProductCreate, ProductUpdate
-from app.utils.responses import ResponseHandler
+from src.models.models import Product, Category
+from src.schemas.products import ProductCreate, ProductUpdate
+from src.utils.responses import ResponseHandler
 
 
 class ProductService:

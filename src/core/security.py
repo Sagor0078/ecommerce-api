@@ -1,16 +1,16 @@
 from fastapi.security.http import HTTPAuthorizationCredentials
 from passlib.context import CryptContext
 from datetime import datetime, timedelta
-from app.core.config import settings
+from src.core.config import settings
 from jose import JWTError, jwt
-from app.schemas.auth import TokenResponse
+from src.schemas.auth import TokenResponse
 from fastapi.encoders import jsonable_encoder
 from fastapi import HTTPException, Depends, status
-from app.models.models import User
+from src.models.models import User
 from sqlalchemy.orm import Session
 from fastapi.security import HTTPBearer
-from app.db.database import get_db
-from app.utils.responses import ResponseHandler
+from src.db.database import get_db
+from src.utils.responses import ResponseHandler
 
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")

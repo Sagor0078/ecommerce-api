@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends, Query, status
-from app.db.database import get_db
-from app.services.carts import CartService
+from src.db.database import get_db
+from src.services.carts import CartService
 from sqlalchemy.orm import Session
-from app.schemas.carts import CartCreate, CartUpdate, CartOut, CartOutDelete, CartsOutList
-from app.core.security import get_current_user
+from src.schemas.carts import CartCreate, CartUpdate, CartOut, CartOutDelete, CartsOutList
+from src.core.security import get_current_user
 from fastapi.security import HTTPBearer
 from fastapi.security.http import HTTPAuthorizationCredentials
 

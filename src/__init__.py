@@ -1,4 +1,4 @@
-from app.routers import products, categories, carts, users, auth, accounts
+from src.routers import products, categories, carts, users, auth, accounts
 from fastapi import FastAPI
 
 

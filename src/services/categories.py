@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session
-from app.models.models import Category
-from app.schemas.categories import CategoryCreate, CategoryUpdate
-from app.utils.responses import ResponseHandler
+from src.models.models import Category
+from src.schemas.categories import CategoryCreate, CategoryUpdate
+from src.utils.responses import ResponseHandler
 
 
 class CategoryService:

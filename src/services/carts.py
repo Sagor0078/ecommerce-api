@@ -1,9 +1,9 @@
 from sqlalchemy.orm import Session
-from app.models.models import Cart, CartItem, Product
-from app.schemas.carts import CartUpdate, CartCreate
-from app.utils.responses import ResponseHandler
+from src.models.models import Cart, CartItem, Product
+from src.schemas.carts import CartUpdate, CartCreate
+from src.utils.responses import ResponseHandler
 from sqlalchemy.orm import joinedload
-from app.core.security import get_current_user
+from src.core.security import get_current_user
 
 
 class CartService:

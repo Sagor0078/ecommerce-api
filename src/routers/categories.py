@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends, Query, status
-from app.db.database import get_db
-from app.services.categories import CategoryService
+from src.db.database import get_db
+from src.services.categories import CategoryService
 from sqlalchemy.orm import Session
-from app.schemas.categories import CategoryCreate, CategoryOut, CategoriesOut, CategoryOutDelete, CategoryUpdate
-from app.core.security import check_admin_role
+from src.schemas.categories import CategoryCreate, CategoryOut, CategoriesOut, CategoryOutDelete, CategoryUpdate
+from src.core.security import check_admin_role
 
 
 router = APIRouter(tags=["Categories"], prefix="/categories")
