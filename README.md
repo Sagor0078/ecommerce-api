@@ -63,6 +63,12 @@ python migrate.py
 python run.py
 ```
 
+## API endpoints
+
+(img/ecom1.png)(https://github.com/Sagor0078/ecommerce-api)
+(img/ecom1.png)(https://github.com/Sagor0078/ecommerce-api)
+
+
 
 
 
