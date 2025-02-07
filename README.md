@@ -66,7 +66,7 @@ python run.py
 ## API endpoints
 
 [![Directory docs](img/ecom1.png)](https://github.com/Sagor0078/ecommerce-api)
-[![Directory docs](img/ecom1.png)](https://github.com/Sagor0078/ecommerce-api)
+[![Directory docs](img/ecom2.png)](https://github.com/Sagor0078/ecommerce-api)
 
 
 
